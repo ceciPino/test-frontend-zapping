@@ -4,10 +4,13 @@ import { success } from "./components/success/success.js";
 
 function changeContent() {
     let rootDiv = document.getElementById("root")
-    const content = loader()
+
+    const checkoutContainer = checkout()
+    const loaderContainer = loader()
+    const successContainer = success()
 
     rootDiv.innerHTML = ""
-    rootDiv.appendChild(content)
+    rootDiv.appendChild(successContainer)
 }
 
 changeContent();
