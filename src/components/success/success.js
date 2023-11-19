@@ -1,19 +1,18 @@
 export const success = () => {
-    // let container = document.createElement("h2")
-    // container.textContent = "prueba de eeexxxitoo"
+  const root = document.getElementById("root");
 
-    let successContainer = document.createElement("main")
-
-    let successHeader = document.createElement("div")
-    
-
-    let successContent = document.createElement("section")
-
-    let successImg = document.createElement("img")
-
-    let successText = document.createElement("div")
-
-
-
-    return container
-}
+  root.innerHTML = `<header>
+    <p>ola soy un logo</p>
+    <a href="">ayuaaa</a>
+    </header>
+    <div>
+    <p>esto es una imagen de un ticket bonito</p>
+    </div>
+    <div>
+    <h3>esto es un texto simpatico</h3>
+    <p> este es otro texto mas chiquititi </p>
+    </div>
+    <div>
+    <button id="botonSuccess"> esta es el area del botoncete</button>
+    </div>`;
+};

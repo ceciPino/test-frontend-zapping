@@ -9,8 +9,15 @@ function changeContent() {
     const loaderContainer = loader()
     const successContainer = success()
 
-    rootDiv.innerHTML = ""
+    //rootDiv.innerHTML = ""
     rootDiv.appendChild(successContainer)
 }
 
 changeContent();
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    document.getElementById('botonSuccess').addEventListener('click', checkout());
+    
+});
