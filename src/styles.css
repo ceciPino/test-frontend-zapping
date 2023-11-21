@@ -1,14 +1,38 @@
-/********* 
-
-$color-primary: #121416;
-;
-
 body {
-  background-color: $color-primary;
+  background-color: #121416;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: Stolzl;
 }
-
-h2 {
-    color:  #FFF;
-  }******/
+body .loader-container .loader-text1 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+body .loader-container .loader-animated-text {
+  position: relative;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: Stolzl;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  animation: fadeDown 5s linear infinite, moveDown 5s linear infinite;
+}
+@keyframes fadeDown {
+  0%, 100% {
+    color: rgb(255, 255, 255);
+  }
+  50% {
+    color: rgba(255, 255, 255, 0);
+  }
+}
+@keyframes moveDown {
+  0%, 100% {
+    top: 0;
+  }
+  50% {
+    top: 100%;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
