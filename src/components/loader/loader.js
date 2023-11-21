@@ -33,7 +33,7 @@ export const loader = () => {
     if (window.location.hash === '#/loader') {
       setTimeout(function() {
         window.location.hash = '#/succes';
-      }, 100000);
+      }, 5000);
     }
     return draw
   }

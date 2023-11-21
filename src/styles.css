@@ -48,5 +48,26 @@ body .loader-container .loader-animated-text {
     top: 100%;
   }
 }
+body .success-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  justify-content: space-around;
+}
+body .success-container header {
+  /**display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;**/
+  color: rgb(255, 255, 255);
+  display: flex;
+  width: auto;
+  padding: 48px 24px;
+  justify-content: space-between;
+  align-items: center;
+}
+body .success-container header a {
+  text-decoration: none;
+}
 
 /*# sourceMappingURL=styles.css.map */
