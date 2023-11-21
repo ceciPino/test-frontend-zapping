@@ -1,46 +1,59 @@
 $color-primary: #121416;
-$font-text: Stolzl;
-$texto-color-inicial: rgba(255, 255, 255, 1);
-$texto-color-final: rgba(255, 255, 255, 0);
+$font-stack: Helvetica;
+$text-color-initial: rgba(255, 255, 255, 1);
+$text-color-final: rgba(255, 255, 255, 0);
 
 body {
   background-color: $color-primary;
-  color: $texto-color-inicial;
+  color: $text-color-initial;
   text-align: center;
-  font-family: $font-text;
+  font-family: $font-stack;
 
   .loader-container {
+    margin-top: 180px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    justify-content: space-around;
+    .icon-container {
+      align-items: center;
+    }
     .loader-text1 {
-      color: $texto-color-inicial;
+      color: $text-color-initial;
       text-align: center;
+      margin-top: 40px;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 24px;
     }
     .loader-animated-text {
       position: relative;
-      color: $texto-color-inicial;
+      color: $text-color-initial;
       text-align: center;
-      font-family: $font-text;
+      font-family: $font-stack;
       font-style: normal;
       font-weight: 400;
-      line-height: 150%;
+      line-height: 21px;
       animation: fadeDown 5s linear infinite, moveDown 5s linear infinite;
       @keyframes fadeDown {
-        0%, 100% {
-          color: $texto-color-inicial;
+        0%,
+        100% {
+          color: $text-color-initial;
         }
         50% {
-          color: $texto-color-final;
+          color: $text-color-final;
         }
       }
-      
+
       @keyframes moveDown {
-        0%, 100% {
-          top: 0;
+        0%,
+        100% {
+          top: 10%;
         }
         50% {
           top: 100%;
         }
       }
-
     }
   }
 }

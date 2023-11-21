@@ -2,20 +2,34 @@ body {
   background-color: #121416;
   color: rgb(255, 255, 255);
   text-align: center;
-  font-family: Stolzl;
+  font-family: Helvetica;
+}
+body .loader-container {
+  margin-top: 180px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  justify-content: space-around;
+}
+body .loader-container .icon-container {
+  align-items: center;
 }
 body .loader-container .loader-text1 {
   color: rgb(255, 255, 255);
   text-align: center;
+  margin-top: 40px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
 }
 body .loader-container .loader-animated-text {
   position: relative;
   color: rgb(255, 255, 255);
   text-align: center;
-  font-family: Stolzl;
+  font-family: Helvetica;
   font-style: normal;
   font-weight: 400;
-  line-height: 150%;
+  line-height: 21px;
   animation: fadeDown 5s linear infinite, moveDown 5s linear infinite;
 }
 @keyframes fadeDown {
@@ -28,7 +42,7 @@ body .loader-container .loader-animated-text {
 }
 @keyframes moveDown {
   0%, 100% {
-    top: 0;
+    top: 10%;
   }
   50% {
     top: 100%;

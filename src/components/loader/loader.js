@@ -2,7 +2,7 @@ export const loader = () => {
     const draw = document.createElement('div');
     const templateLoader = `
     <main class="loader-container">
-    <div>
+    <div class="icon-container">
         <svg width="194" height="186" viewBox="0 0 194 186" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g id="Component 2">
             <circle id="Ellipse 107" cx="97.0001" cy="93" r="90.75" stroke="url(#paint0_linear_1_1845)" stroke-width="4.5"/>
@@ -33,7 +33,7 @@ export const loader = () => {
     if (window.location.hash === '#/loader') {
       setTimeout(function() {
         window.location.hash = '#/succes';
-      }, 10000);
+      }, 100000);
     }
     return draw
   }
