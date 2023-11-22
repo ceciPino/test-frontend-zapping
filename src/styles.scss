@@ -9,6 +9,20 @@ body {
   text-align: center;
   font-family: $font-stack;
 
+  .checkout-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    justify-content: space-around;
+    header {
+      display: flex;
+      width: auto;
+      padding: 48px 24px;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
   .loader-container {
     margin-top: 180px;
     display: flex;
@@ -64,13 +78,7 @@ body {
     justify-content: space-around;
 
     header {
-      /**display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      text-align: center;**/
-
       color: $text-color-initial;
-
       display: flex;
       width: auto;
       padding: 48px 24px;
