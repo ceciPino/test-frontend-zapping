@@ -4,6 +4,57 @@ body {
   text-align: center;
   font-family: Helvetica;
 }
+body .checkout-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  justify-content: space-around;
+}
+body .checkout-container header {
+  color: rgb(255, 255, 255);
+  display: flex;
+  width: auto;
+  padding: 48px 24px;
+  justify-content: space-between;
+  align-items: center;
+}
+body .checkout-container header a, body .checkout-container header a:hover, body .checkout-container header a:active {
+  display: flex;
+  height: 32px;
+  padding: 8px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  border-radius: 74px;
+  border: 0px solid #373d43;
+  background: rgba(255, 255, 255, 0.05);
+  text-decoration: none;
+  color: inherit;
+}
+body .checkout-container header a:visited {
+  color: inherit;
+}
+body .checkout-container header a:hover, body .checkout-container header a:active {
+  text-decoration: none;
+}
+body .checkout-container section {
+  display: flex;
+  padding: 24px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  align-self: stretch;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.05);
+}
+body .checkout-container section h3 {
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 31px;
+}
 body .loader-container {
   margin-top: 180px;
   display: flex;
@@ -55,10 +106,6 @@ body .success-container {
   justify-content: space-around;
 }
 body .success-container header {
-  /**display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  text-align: center;**/
   color: rgb(255, 255, 255);
   display: flex;
   width: auto;
@@ -66,7 +113,23 @@ body .success-container header {
   justify-content: space-between;
   align-items: center;
 }
-body .success-container header a {
+body .success-container header a, body .success-container header a:hover, body .success-container header a:active {
+  display: flex;
+  height: 32px;
+  padding: 8px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  border-radius: 74px;
+  border: 0px solid #373d43;
+  background: rgba(255, 255, 255, 0.05);
+  text-decoration: none;
+  color: inherit;
+}
+body .success-container header a:visited {
+  color: inherit;
+}
+body .success-container header a:hover, body .success-container header a:active {
   text-decoration: none;
 }
 
