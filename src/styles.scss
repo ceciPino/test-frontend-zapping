@@ -6,7 +6,6 @@ $text-color-final: rgba(255, 255, 255, 0);
 body {
   background-color: $color-primary;
   color: $text-color-initial;
-  text-align: center;
   font-family: $font-stack;
 
   .checkout-container {
@@ -50,20 +49,107 @@ body {
       display: flex;
       padding: 24px;
       flex-direction: column;
-      justify-content: center;
+      //justify-content: center;
       align-items: center;
       gap: 32px;
       align-self: stretch;
       border-radius: 16px;
       border: 1px solid rgba(255, 255, 255, 0.05);
       background: rgba(255, 255, 255, 0.05);
-      
-      h3 {
-        font-size: 25px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 31px;
+
+      .plan-price-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        //gap: 6px;
+        //flex: 1 0 0;
+
+        h3 {
+          font-size: 25px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 31px;
+        }
+
+        .plan-price {
+          display: flex;
+          width: -webkit-fill-available;
+          flex-direction: row;
+          align-items: center;
+          gap: 10px;
+          justify-content: flex-start;
+                }
+
+        p {
+          align-self: stretch;
+          color: rgba(255, 255, 255, 0.6);
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 18px;
+        }
       }
+
+      .plan-description {
+        display: flex;
+        padding: 12px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        align-self: stretch;
+        border-radius: 8px;
+        border: 1px solid var(--gradient-primary, #ef426f);
+        background: var(--base-alpha-black-20, rgba(0, 0, 0, 0.2));
+
+        .incluye {
+          color: var(--base-alpha-white-60, rgba(255, 255, 255, 0.6));
+          font-size: 12px;
+          font-weight: 500;
+          line-height: 18px;
+          letter-spacing: 0.6px;
+        }
+        .dias-prueba {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 21px;
+          width: -webkit-fill-available;
+
+          p {
+            background: var(
+              --gradient-primary,
+              linear-gradient(97deg, #ef426f 34.9%, #f0f179 98.88%)
+            );
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+
+          span {
+            color: var(--base-white, #fff);
+          }
+        }
+
+        .fecha-inicio {
+          color: rgba(255, 255, 255, 0.6);
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 18px;
+        }
+      }
+
+      .payment-method {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+      }
+
+
     }
   }
 
@@ -73,6 +159,7 @@ body {
     flex-direction: column;
     gap: 4px;
     justify-content: space-around;
+    text-align: center;
     .icon-container {
       align-items: center;
     }
@@ -120,6 +207,7 @@ body {
     flex-direction: column;
     gap: 4px;
     justify-content: space-around;
+    text-align: center;
 
     header {
       color: $text-color-initial;

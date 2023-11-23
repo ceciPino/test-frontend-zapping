@@ -27,9 +27,11 @@ export const checkout = () => {
                 A partir del 00/00/00, $00.000/mes</p>
         </div>
         <div class="plan-description">
-            <p>Incluye</p>
-            <p>7 días de prueba</p> <span>Gratis</span>
-            <p>A partir del 00/00/00, $00.000/mes</p>
+            <p class="incluye">Incluye</p>
+            <div class="dias-prueba">
+                <p>7 días de prueba</p> <span>Gratis</span>
+            </div>
+            <p class="fecha-inicio">A partir del 00/00/00, $00.000/mes</p>
         </div>
         <div class="payment-method">
             <p>Método de pago</p>
