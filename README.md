@@ -13,7 +13,7 @@ Asegúrate de tener instalado [Node.js](https://nodejs.org/) en tu máquina.
 1. Clona este repositorio: git clone https://github.com/tu-usuario/tu-proyecto.git
 2. Navega al directorio correspondiente al proyecto, por ejemplo:
 
-cd challenge-zapping
+    "cd challenge-zapping"
 
 3. Para instalar las dependencias:
 
