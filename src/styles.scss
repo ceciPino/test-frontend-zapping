@@ -84,8 +84,6 @@ body {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        //gap: 6px;
-        //flex: 1 0 0;
 
         h3 {
           font-size: 20px;
@@ -124,7 +122,7 @@ body {
           font-size: 12px;
           font-style: normal;
           font-weight: 400;
-          line-height: 150%; /* 18px */
+          line-height: 18px;
         }
       }
 
@@ -209,6 +207,11 @@ body {
         align-self: stretch;
         border-radius: 4px;
         border: 1px solid #25292d;
+
+        transition: background-color 0.1s ease;
+        &:hover {
+          background-color: var(--gradient-primary, #ef426f);
+        }
       }
     }
 
@@ -233,17 +236,21 @@ body {
     }
 
     button {
-      display: flex;
       height: 52px;
       padding: 8px 32px;
       justify-content: center;
       align-items: center;
       gap: 6px;
-      align-self: stretch;
 
       color: $text-color-initial;
       border-radius: 4px;
+      border: hidden;
       background: #ef426f;
+
+      transition: background-color 0.1s ease;
+      &:hover {
+        background: linear-gradient(97deg, #EF426F 34.9%, #F0F179 98.88%);
+      }
     }
   }
 
@@ -346,7 +353,7 @@ body {
         line-height: 40px;
       }
       .comenzar-text {
-        color: var(--base-alpha-white-70, rgba(255, 255, 255, 0.7));
+        color: rgba(255, 255, 255, 0.7);
         text-align: center;
         font-size: 14px;
         font-style: normal;
@@ -366,6 +373,16 @@ body {
       align-self: stretch;
       border-radius: 4px;
       border: 1px solid #25292d;
+
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 21px;
+
+      transition: background-color 0.1s ease;
+      &:hover {
+        background: linear-gradient(97deg, #EF426F 34.9%, #F0F179 98.88%);
+      }
     }
   }
 }

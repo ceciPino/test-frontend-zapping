@@ -59,8 +59,7 @@ export const checkout = () => {
         <p>$0</p>
     </div>
     <p class="final-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua. Ut enim ad minim veniam</p>
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
     <button id="botonCheckout">Comenzar mi prueba gratis</button>
 </main>
     `;
