@@ -11,9 +11,8 @@ export const checkout = () => {
 
             <a class="help-a" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Ayuda</a>
         </header>
-  
-    <section>
         <h3>Confirma tu suscripción</h3>
+    <section> 
         <div class="plan-price-container">
             <h3>Plan Lite +</h3>
             <div class="plan-price">
@@ -27,12 +26,15 @@ export const checkout = () => {
                 A partir del 00/00/00, $00.000/mes</p>
         </div>
         <div class="plan-description">
-            <p class="incluye">Incluye</p>
+            <p class="incluye">INCLUYE</p>
             <div class="dias-prueba">
                 <p>7 días de prueba</p> <span>Gratis</span>
             </div>
             <p class="fecha-inicio">A partir del 00/00/00, $00.000/mes</p>
         </div>
+        <svg width="316" height="1" viewBox="0 0 316 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <line y1="0.5" x2="316" y2="0.5" stroke="white" stroke-opacity="0.05"/>
+        </svg>
         <div class="payment-method">
             <p>Método de pago</p>
             <svg width="35" height="24" viewBox="0 0 35 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -53,12 +55,12 @@ export const checkout = () => {
         <button id="boton-editar-pago">Editar método de pago</button>
     </section>
     <div class="total-price">
-        <h2>Pagas ahora <span>$0</span></h2>
-    
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        <p>Pagas ahora </p>
+        <p>$0</p>
+    </div>
+    <p class="final-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
             sed do eiusmod tempor incididunt ut labore et dolore
             magna aliqua. Ut enim ad minim veniam</p>
-    </div>
     <button id="botonCheckout">Comenzar mi prueba gratis</button>
 </main>
     `;

@@ -32,12 +32,10 @@ export const success = () => {
             </svg>
         </div>
         <div class="message">
-            <h3>Muy bien!</h3>
-            <p> Tu suscripción a Zapping está lista, ya puedes comenzar a ver TV.</p>
+            <p class="muy-bien">Muy bien!</p>
+            <p class="comenzar-text"> Tu suscripción a Zapping está lista, ya puedes comenzar a ver TV.</p>
         </div>
-        <div>
             <button id="botonSuccess">Regresar</button>
-        </div>
     </main>
     `;
   
