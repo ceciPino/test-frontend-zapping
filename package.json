@@ -1,14 +1,19 @@
 {
   "name": "challenge-zapping",
   "version": "1.0.0",
-  "description": "",
-  "main": "main.js",
+  "description": "Este proyecto es la maquetación de un prototipo entregado en Figma, para cuya funcionalidad y estructura de los componentes se usó Javascript, HTML y el preprocesador de estilos SASS.",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ceciPino/test-frontend-zapping.git"
+  },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "sass": "^1.69.5"
-  }
+  "bugs": {
+    "url": "https://github.com/ceciPino/test-frontend-zapping/issues"
+  },
+  "homepage": "https://github.com/ceciPino/test-frontend-zapping#readme"
 }
